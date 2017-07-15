@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.chat.chatController.ChatController">
+   <children>
+      <ListView fx:id="txtOut" prefHeight="317.0" prefWidth="600.0" />
+      <TextArea fx:id="txtIn" prefHeight="42.0" prefWidth="511.0" />
+      <HBox prefHeight="38.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="btnEnter" mnemonicParsing="false" onAction="#onClickNewDataButton" prefHeight="45.0" prefWidth="89.0" text="Enter" />
+            <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#onClickExitButton" onMousePressed="#setOnMouseClickedLogin" prefHeight="38.0" prefWidth="85.0" text="Log in" />
+            <Button fx:id="btnExit" layoutX="99.0" layoutY="10.0" mnemonicParsing="false" onAction="#onClickExitButton" prefHeight="41.0" prefWidth="77.0" text="Exit" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

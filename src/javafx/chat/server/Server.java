@@ -1,4 +1,4 @@
-package chat.server;
+package javafx.chat.server;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -124,5 +124,21 @@ public class Server {
                 System.out.println("Потоки не закрыты!");
             }
         }
+    }
+
+    public List<Connection> getConnections() {
+        return connections;
+    }
+
+    public void setConnections(List<Connection> connections) {
+        this.connections = connections;
+    }
+
+    public ServerSocket getServer() {
+        return server;
+    }
+
+    public void setServer(ServerSocket server) {
+        this.server = server;
     }
 }

@@ -1,7 +1,7 @@
-package chat.main;
+package javafx.chat.main;
 
-import chat.client.Client;
-import chat.server.Server;
+import javafx.chat.client.Client;
+import javafx.chat.server.Server;
 
 import java.util.Scanner;
 
